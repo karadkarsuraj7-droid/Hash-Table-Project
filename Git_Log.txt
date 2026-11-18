@@ -1,0 +1,86 @@
+GIT LOG HISTORY - PERSONALIZED HASH TABLE IMPLEMENTATION
+========================================================
+
+Student PRN: 202501100173
+Project: Personalized Hash Table Implementation (Student Marks)
+Language: C++
+Hashing method: Mid-Square Method
+Collision handling: Separate Chaining
+Table size used in the submitted code: 23
+
+IMPORTANT
+---------
+This file is a guide/template, NOT a genuine Git history export.
+The assignment requires at least 6 real commits with their original
+timestamps and changes. Do not submit invented commit hashes or dates.
+Generate the actual history from your own Git repository using the
+commands below.
+
+1. EXPORT YOUR REAL GIT HISTORY
+-------------------------------
+Open Command Prompt or PowerShell in the folder containing
+hash_table.cpp and your Git repository, then run:
+
+    git log --stat --date=iso --pretty=fuller > Git_Log.txt
+
+To view the history in the terminal:
+
+    git log --stat --date=iso --pretty=fuller
+
+2. SUGGESTED INCREMENTAL COMMIT MILESTONES
+------------------------------------------
+Use these as milestone ideas when developing the project. They are
+not proof that these commits already exist:
+
+1. Initialize the C++ hash table project and add the personalized
+   dataset for PRN 202501100173.
+
+2. Implement the Mid-Square hash function using the middle two digits
+   of the four-digit square.
+
+3. Create the hash table with 23 slots and initialize all slots as empty.
+
+4. Implement insertion of keys using separate chaining with linked
+   lists, appending new nodes to the end of each chain.
+
+5. Add output showing each inserted key, its hash index, and whether
+   a collision occurred.
+
+6. Implement display of all 23 table indices and their linked-list
+   chains.
+
+7. Compile, run, and verify the output against the manual trace report;
+   correct any mismatches found.
+
+Only create commits for work you actually performed. If you have not
+made these changes in stages, do not create backdated or misleading
+commits. You can make genuine commits for remaining improvements now,
+but they will show their real creation dates.
+
+3. CHECK THAT THE HISTORY IS READY
+----------------------------------
+Run:
+
+    git rev-list --count HEAD
+    git log --oneline --decorate
+    git status
+
+The first command displays the number of commits. Confirm that there
+are at least 6 genuine commits and that Git_Log.txt contains the
+full timestamped history.
+
+4. PROJECT DETAILS TO CHECK AGAINST YOUR REPORT
+-----------------------------------------------
+Personalized dataset:
+73, 86, 99, 12, 25, 38, 51, 64, 77, 90, 3, 16, 29, 42, 55, 68, 81, 94, 7, 20
+
+Hash function:
+square the key -> take the middle two digits of the four-digit square
+(with leading zeros) -> take remainder modulo 23.
+
+Collision handling:
+Separate Chaining.
+
+Note:
+The submitted C++ source uses TABLE_SIZE 23 and DATA_SIZE 20.
+The assignment asks for a Git export produced from the actual repository.
